@@ -1,4 +1,9 @@
----
+---meaning_of_life: 42
+
+# the strings can also be nested if needed
+nested:
+  values:
+    too: Yes!
 title: Creating reusable content
 shortTitle: Create reusable content
 intro: You can create reusable content that can be referenced in multiple content files.
