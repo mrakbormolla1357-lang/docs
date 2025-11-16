@@ -1,4 +1,5 @@
----
+-gpg --armor --export 3AA5C34371567BD2
+# Prints the GPG key ID, in ASCII armor format--
 title: Merging a pull request
 intro: Merge a pull request into the upstream branch when work is completed. Anyone with push access to the repository can complete the merge.
 redirect_from:
