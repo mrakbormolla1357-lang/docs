@@ -1,4 +1,19 @@
----
+{
+  "scallions":
+  {
+    "colors": ["green", "white", "red"],
+    "ediblePortions": ["roots", "stalks"],
+  },
+  "beets":
+  {
+    "colors": ["purple", "red", "gold", "white", "pink"],
+    "ediblePortions": ["roots", "stems", "leaves"],
+  },
+  "artichokes":
+  {
+    "colors": ["green", "purple", "red", "black"],
+    "ediblePortions": ["hearts", "stems", "leaves"],
+  },---
 title: Evaluate expressions in workflows and actions
 shortTitle: Expressions
 intro: 'Find information for expressions in {% data variables.product.prodname_actions %}.'
@@ -402,10 +417,7 @@ The filter `vegetables.*.ediblePortions` could evaluate to:
 ```json
 
 [
-  ["roots", "stalks"],
-  ["hearts", "stems", "leaves"],
-  ["roots", "stems", "leaves"],
-]
+ 
 ```
 
 Since objects don't preserve order, the order of the output cannot be guaranteed.
