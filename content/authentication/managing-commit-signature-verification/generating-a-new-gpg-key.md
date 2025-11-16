@@ -1,4 +1,9 @@
----
+$ gpg --list-secret-keys --keyid-format=long
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot <hubot@example.com>
+ssb   4096R/4BB6D45482678BE3 2016-03-10---
 title: Generating a new GPG key
 intro: 'If you don''t have an existing GPG key, you can generate a new GPG key to use for signing commits and tags.'
 redirect_from:
