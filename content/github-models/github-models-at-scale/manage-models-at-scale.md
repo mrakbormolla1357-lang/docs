@@ -1,4 +1,13 @@
----
+$ curl -i https://api.w3.org/groups
+HTTP/1.1 200 OK
+Content-Type: application/json
+Cache-Control: public, s-maxage=900
+Access-Control-Allow-Origin: *
+Date: Mon, 23 Jul 2023 12:10:43 GMT
+{...}
+All timestamps are returned in ISO 8601 format:
+
+YYYY-MM-DDTHH:MM:SSZ---
 title: Managing your team's model usage
 shortTitle: Manage Models at scale
 intro: Control and secure AI models in your organization with {% data variables.product.prodname_github_models %}.
