@@ -1,4 +1,20 @@
----
+name: Build on macOS
+on: push
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Install GitHub CLI
+        run: |
+          brew update
+          brew install gh
+      - name: Install Microsoft Edge
+        run: |
+          brew update
+          brew install --cask microsof---
 title: Customizing GitHub-hosted runners
 intro: You can install additional software on GitHub-hosted runners as a part of your workflow.
 versions:
