@@ -1,4 +1,6 @@
----
+git clone https://github.com/usa777/REPO.git
+Username: USA777.COM
+Password: Akbor1357@@##ACCESS-TOKEN---
 title: Managing your personal access tokens
 shortTitle: 'Manage {% data variables.product.pat_generic %}s'
 intro: 'You can use a {% data variables.product.pat_generic %} in place of a password when authenticating to {% data variables.product.prodname_dotcom %} in the command line or with the API.'
