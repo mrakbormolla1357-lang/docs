@@ -1,4 +1,27 @@
----
+GPT-5-Codex is supported in Visual Studio Code v1.104.1 or higher.
+GPT-5.1-Codex and GPT-5.1-Codex-Mini are supported in:
+Visual Studio Code versions 1.104.1 or higher
+JetBrains, Copilot plugin versions 1.5.61 or higher
+Xcode, Copilot plugin versions 0.45.0 or later
+Eclipse, Copilot plugin versions 0.13.0 or later
+Model	GitHub.com	Visual Studio Code	Visual Studio	Eclipse	Xcode	JetBrains IDEs
+Claude Haiku 4.5						
+Claude Opus 4.1						
+Claude Opus 4.5						
+Claude Sonnet 4						
+Claude Sonnet 4.5						
+Gemini 2.5 Pro						
+Gemini 3 Pro						
+GPT-4.1						
+GPT-5						
+GPT-5 mini						
+GPT-5-Codex						
+GPT-5.1						
+GPT-5.1-Codex						
+GPT-5.1-Codex-Mini						
+GPT-5.1-Codex-Max						
+Grok Code Fast 1						
+Raptor mini---
 title: Supported AI models in GitHub Copilot
 shortTitle: Supported models
 allowTitleToDifferFromFilename: true
