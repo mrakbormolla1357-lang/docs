@@ -1,0 +1,127 @@
+Skip to main content
+GitHub Docs
+REST API/About the REST API/API Versions
+API Versions
+Learn how to specify which REST API version to use whenever you make a request to the REST API.
+
+In this article
+About API versioning
+The GitHub REST API is versioned. The API version name is based on the date when the API version was released. For example, the API version 2022-11-28 was released on Mon, 28 Nov 2022.
+
+Any breaking changes will be released in a new API version. Breaking changes are changes that can potentially break an integration. Breaking changes include:
+
+Removing an entire operation
+Removing or renaming a parameter
+Removing or renaming a response field
+Adding a new required parameter
+Making a previously optional parameter required
+Changing the type of a parameter or response field
+Removing enum values
+Adding a new validation rule to an existing parameter
+Changing authentication or authorization requirements
+Any additive (non-breaking) changes will be available in all supported API versions. Additive changes are changes that should not break an integration. Additive changes include:
+
+Adding an operation
+Adding an optional parameter
+Adding an optional request header
+Adding a response field
+Adding a response header
+Adding enum values
+When a new REST API version is released, the previous API version will be supported for at least 24 more months following the release of the new API version.
+
+Specifying an API version
+You should use the X-GitHub-Api-Version header to specify an API version. For example:
+
+curl --header "X-GitHub-Api-Version:2022-11-28" https://api.github.com/zen
+Requests without the X-GitHub-Api-Version header will default to use the 2022-11-28 version.
+
+If you specify an API version that is no longer supported, you will receive a 400 error.
+
+Upgrading to a new API version
+Before upgrading to a new REST API version, you should read the changelog of breaking changes for the new API version to understand what breaking changes are included and to learn more about how to upgrade to that specific API version. For more information, see Breaking changes.
+
+When you update your integration to specify the new API version in the X-GitHub-Api-Version header, you'll also need to make any changes required for your integration to work with the new API version.
+
+Once your integration is updated, test your integration to verify that it works with the new API version.
+
+Supported API versions
+The following REST API versions are currently supported:
+
+2022-11-28
+
+You can also make an API request to get all of the supported API versions. For more information, see REST API endpoints for meta data.
+
+Help and support
+Did you find what you needed?
+
+Privacy policy
+Help us make these docs great!
+All GitHub docs are open source. See something that's wrong or unclear? Submit a pull request.
+
+Learn how to contribute
+
+Still need help?
+Ask the GitHub community
+Contact support
+Legal
+© 2025 GitHub, Inc.
+Terms
+Privacy
+Status
+Pricing
+Expert services
+Blog---
+title: API Versions
+shortTitle: API Versions
+intro: Learn how to specify which REST API version to use whenever you make a request to the REST API.
+versions:
+  fpt: '*'
+  ghes: '*'
+  ghec: '*'
+redirect_from:
+  - /rest/overview/api-versions
+---
+
+## About API versioning
+
+{% data reusables.rest-api.about-api-versions %}
+
+{% ifversion ghes %}
+
+## About {% data variables.product.prodname_ghe_server %} versioning and REST API versioning
+
+{% data variables.product.prodname_ghe_server %} versions are decoupled from REST API versions. You can upgrade your {% data variables.product.prodname_ghe_server %} version but keep the same REST API version, as long as the API version is included in the {% data variables.product.prodname_ghe_server %} version. Similarly, you can upgrade your REST API version without updating your {% data variables.product.prodname_ghe_server %} version, as long as the new REST API version you choose is available for your {% data variables.product.prodname_ghe_server %} version.
+
+The {% data variables.product.prodname_ghe_server %} release notes will state when a REST API version is no longer supported. For more information, see [AUTOTITLE](/admin/release-notes).
+
+{% endif %}
+
+## Specifying an API version
+
+You should use the `X-GitHub-Api-Version` header to specify an API version. For example:
+
+```shell
+curl {% data reusables.rest-api.version-header %} https://api.github.com/zen
+```
+
+Requests without the `X-GitHub-Api-Version` header will default to use the `{{ initialRestVersioningReleaseDate }}` version.
+
+If you specify an API version that is no longer supported, you will receive a `400` error.
+
+## Upgrading to a new API version
+
+Before upgrading to a new REST API version, you should read the changelog of breaking changes for the new API version to understand what breaking changes are included and to learn more about how to upgrade to that specific API version. For more information, see [AUTOTITLE](/rest/overview/breaking-changes).
+
+When you update your integration to specify the new API version in the `X-GitHub-Api-Version` header, you'll also need to make any changes required for your integration to work with the new API version.
+
+Once your integration is updated, test your integration to verify that it works with the new API version.
+
+## Supported API versions
+
+The following REST API versions are currently supported:
+
+{% for apiVersion in allVersions[currentVersion].apiVersions %}
+{{ apiVersion }}
+{% endfor %}
+
+You can also make an API request to get all of the supported API versions. For more information, see [AUTOTITLE](/rest/meta/meta#get-all-api-versions).
