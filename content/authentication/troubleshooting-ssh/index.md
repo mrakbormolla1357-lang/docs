@@ -1,4 +1,5 @@
----
+cantro1+shift  +m---to tap<img width="896" height="1200" alt="1000003532" src="https://github.com/user-attachments/assets/017cd145-aa7d-4c57-a443-7ff96fc66770" />
+
 title: Troubleshooting SSH
 intro: 'When using SSH to connect and authenticate to {% data variables.product.github %}, you may need to troubleshoot unexpected issues that may arise.'
 redirect_from:
