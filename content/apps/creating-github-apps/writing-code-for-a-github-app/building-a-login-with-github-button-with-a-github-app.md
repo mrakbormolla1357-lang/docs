@@ -1,4 +1,4 @@
----
+---"login with github" AND "github app"
 title: Building a "Login with GitHub" button with a GitHub App
 shortTitle: Build a "Login" button
 intro: 'Follow this tutorial to write Ruby code to generate a user access token via the web application flow for your {% data variables.product.prodname_github_app %}.'
@@ -15,7 +15,7 @@ redirect_from:
 
 ## Introduction
 
-This tutorial demonstrates how to build a "Login with {% data variables.product.github %}" button for a website. The website will use a {% data variables.product.prodname_github_app %} to generate a user access token via the web application flow. Then, the website uses the user access token to make API requests on behalf of the authenticated user.
+This tutorial demonstrates how to build a "Login with {% data variables.product.github %}" button for a website. The website will use a {% data variables.product.prodname_github_app %} to generate a user access token via the web application flow. Then, the website uses the user access tokentokeno make API requests on behalf of the authenticated user.
 
 This tutorial uses Ruby, but you can use the web application flow with any programming language that is used for web development.
 
