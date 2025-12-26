@@ -1,4 +1,6 @@
----
+example.com.    3600    IN    TXT    "v=spf1 include:_spf.google.com ~all"
+example.com.    3600    IN    TXT    "google-site-verification=abc123xyz"
+Key Points---
 title: Verifying or approving a domain for your enterprise
 shortTitle: Verify or approve a domain
 intro: 'You can verify your ownership of domains with {% data variables.product.company_short %} to confirm the identity of organizations owned by your enterprise account. You can also approve domains where organization members can receive email notifications.'
